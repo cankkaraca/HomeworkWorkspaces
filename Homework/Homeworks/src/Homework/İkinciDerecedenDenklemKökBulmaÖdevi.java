@@ -2,41 +2,45 @@ package Homework;
 
 import java.util.Scanner;
 
-public class İkinciDerecedenDenklemKökBulmaÖdevi {
+public class ÃkinciDerecedenDenklemKÃ¶kBulmaÃ–devi {
 
 	public static void main(String[] args) {
 		
 Scanner input = new Scanner(System.in);
 
 double a , b , c ,x1 ,x2 , delta;
-
-System.out.println("a : ");
+ 
+// a,b,c degerlrini tanmlÄ±yoruz		
+		
+System.out.println("a degerini girin : ");
 a = input.nextDouble();
 
-System.out.println("b : ");
+System.out.println("b degerini girin : ");
 b = input.nextDouble();
 
-System.out.println("c : ");
+System.out.println("c degerini girin : ");
 c = input.nextDouble();
 
+// DeltayÄ± tanÄ±mladÄ±k		
+		
 delta = b * b - 4*(a*c);
 
 if (delta == 0) {
 	x1 = -b / (2*a);
 	
-	System.out.println("Kökler esittir ve x1 = x2 " + x1);
+	System.out.println("KÃ¶kler esittir ve x1 = x2 " + x1);
 }
 
 else if(delta > 0) {
 	x1 = (-b + Math.sqrt(delta))/ 2*a ;
 	x2 = (-b - Math.sqrt(delta))/ 2*a ;
 	
-	System.out.println(" 2 tane gercek kökü vardır x1 = " + x2 );
+	System.out.println(" 2 tane gercek kÃ¶kÃ¼ vardÃ½r x1 = " + x2 );
 	
 }
 	
 else 
-	System.out.println(" Gercek kökü yoktur.");
+	System.out.println(" Gercek kÃ¶kÃ¼ yoktur.");
 
 
 	}
