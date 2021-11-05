@@ -28,19 +28,19 @@ delta = b * b - 4*(a*c);
 if (delta == 0) {
 	x1 = -b / (2*a);
 	
-	System.out.println("Kökler esittir ve x1 = x2 " + x1);
+	System.out.println("Kökler  birbirine esittir ve x1 = x2 " + x1);
 }
 
 else if(delta > 0) {
 	x1 = (-b + Math.sqrt(delta))/ 2*a ;
 	x2 = (-b - Math.sqrt(delta))/ 2*a ;
 	
-	System.out.println(" 2 tane gercek kökü vardýr x1 = " + x2 );
+	System.out.println(" 2 tane reel kökü vardır x1 = " + x2 );
 	
 }
 	
 else 
-	System.out.println(" Gercek kökü yoktur.");
+	System.out.println(" Reel  kökü yoktur.");
 
 
 	}
